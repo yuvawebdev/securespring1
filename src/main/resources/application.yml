@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+
+
+#spring:
+#  datasource:
+#    username: appuser
+#    password: appuser123
+#    url: jdbc:mysql://localhost:3306/userdb
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#        format_sql: true
+#    show-sql: true
